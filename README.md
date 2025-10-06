@@ -5,3 +5,9 @@ It provides:
 - A custom `ErrorGuard` class for structured error messages
 - An `asyncHandler` wrapper to catch async route errors automatically
 - A clean, customizable Express error-handling middleware
+
+## 🚀 Installation
+
+```bash
+npm install error-guard
+```
