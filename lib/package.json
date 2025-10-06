@@ -1,0 +1,26 @@
+{
+  "name": "error-guard",
+  "version": "1.0.0",
+  "description": "Simple and lightweight Express.js error handler middleware with async wrapper",
+  "license": "MIT",
+  "author": "l1l khalil.aamar.dev@gmail.com",
+  "type": "commonjs",
+  "main": "index.js",
+  "keywords": [
+    "express",
+    "error-handler",
+    "middleware",
+    "nodejs"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/l1l-01/express-guard.git"
+  },
+  "bugs": {
+    "url": "https://github.com/l1l-01/express-guard/issues"
+  },
+  "homepage": "https://github.com/l1l-01/express-guard",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
