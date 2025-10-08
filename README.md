@@ -51,17 +51,16 @@ app.get("/users/:id", asyncHandler(async (req, res) => {
 }));
 ```
 - ErrorHelper Each helper returns an instance of ErrorGuard with a prefilled status code and error type.
-| Function | Status | Code | Description |
-|--------|-----|-------------|----------------|
-| `BadRequest(message, details)` | 400 | `BAD_REQUEST`| Invalid request data |
-| `ValidationError(message, details)` | 400 | `VALIDATION_ERROR` | Schema or input validation failed  |
-| `AuthenticationError(message, details)` | 401 | `AUTHENTICATION_ERROR`  | Invalid or missing credentials     |
-| `AuthorizationError(message, details)`  | 403 | `FORBIDDEN_ACCESS`      | Not allowed to perform this action |
-| `ResourceNotFound(message, details)`    | 404 | `RESOURCE_NOT_FOUND`    | Resource does not exist            |
-| `ConflictError(message, details)`       | 409 | `RESOURCE_CONFLICT`     | Conflict with an existing resource |
-| `RateLimitError(message, details)`      | 429 | `RATE_LIMIT_EXCEEDED`   | Too many requests                  |
-| `DependencyError(message, details)`     | 503 | `SERVICE_UNAVAILABLE`   | External dependency failed         |
-| `InternalError(message, details)`       | 500 | `INTERNAL_SERVER_ERROR` | Generic server error               |
+- Function / Status / Code / Description
+- `BadRequest(message, details)` / 400 / `BAD_REQUEST`/ Invalid request data
+- `ValidationError(message, details)` / 400 / `VALIDATION_ERROR` / Schema or input validation failed
+- `AuthenticationError(message, details)` / 401 / `AUTHENTICATION_ERROR`  / Invalid or missing credentials
+- `AuthorizationError(message, details)`  / 403 / `FORBIDDEN_ACCESS`      / Not allowed to perform this action
+- `ResourceNotFound(message, details)`    / 404 / `RESOURCE_NOT_FOUND`    / Resource does not exist
+- `ConflictError(message, details)`       / 409 / `RESOURCE_CONFLICT`     / Conflict with an existing resource
+- `RateLimitError(message, details)`      / 429 / `RATE_LIMIT_EXCEEDED`   / Too many requests
+- `DependencyError(message, details)`     / 503 / `SERVICE_UNAVAILABLE`   / External dependency failed
+- `InternalError(message, details)`       / 500 / `INTERNAL_SERVER_ERROR` / Generic server error
 
 
 
