@@ -70,7 +70,7 @@ const { asyncHandler } = require("error-guard");
 app.get("/users/:id", asyncHandler(async (req, res) => {
   const id = req.params.id;
   const user = await User.findById(id);
-  if (!user) throw new ResourceNotFound("User not found", { userID: id});
+  if (!user) throw ResourceNotFound("User not found", { userID: id});
   res.json(user);
 }));
 ```
