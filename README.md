@@ -28,6 +28,7 @@ throw new ErrorGuard(404, "NOT_FOUND", "email not found", {
   });
 ```
 Output (When NODE_ENV is set to production stack and name will disapear) :
+```
 {
   "status": "fail",
   "message": "email not found",
@@ -37,7 +38,7 @@ Output (When NODE_ENV is set to production stack and name will disapear) :
   "stack": "ErrorGuard: email not found\n    at /path/to/file.js:35:11",
   "name": "ErrorGuard"
 }
-
+```
 
 - An `asyncHandler` wrapper to catch async route errors automatically
 ```javascript
@@ -50,8 +51,7 @@ app.get("/users/:id", asyncHandler(async (req, res) => {
   res.json(user);
 }));
 ```
-- ErrorHelper Each helper returns an instance of ErrorGuard with a prefilled status code and error type.
-- Function / Status / Code / Description
+- ErrorHelper Each helper returns an instance of ErrorGuard with a prefilled status code and error type:
 - `BadRequest(message, details)` / 400 / `BAD_REQUEST`/ Invalid request data
 - `ValidationError(message, details)` / 400 / `VALIDATION_ERROR` / Schema or input validation failed
 - `AuthenticationError(message, details)` / 401 / `AUTHENTICATION_ERROR`  / Invalid or missing credentials
