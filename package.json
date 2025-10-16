@@ -1,0 +1,46 @@
+{
+  "name": "error-guard",
+  "version": "1.0.7",
+  "description": "Error Guard is a lightweight, TypeScript-friendly library for standardized error handling in Node.js/Express applications.",
+  "license": "MIT",
+  "author": "l1l khalil.aamar.dev@gmail.com",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "keywords": [
+    "express",
+    "error-handler",
+    "middleware",
+    "nodejs",
+    "typescript",
+    "library",
+    "error-guard",
+    "error"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/l1l-01/express-guard.git"
+  },
+  "bugs": {
+    "url": "https://github.com/l1l-01/express-guard/issues"
+  },
+  "homepage": "https://github.com/l1l-01/express-guard",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsup src/index.ts --format esm,cjs --dts --clean"
+  },
+  "devDependencies": {
+    "@types/node": "^24.8.0",
+    "tsup": "^8.5.0",
+    "typescript": "^5.9.3"
+  }
+}
