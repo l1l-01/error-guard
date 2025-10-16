@@ -3,7 +3,7 @@
 **Error Guard** is a lightweight, TypeScript-friendly library for standardized error handling in Node.js/Express applications.
 
 # Changelog
-## v1.0.8 2025-10-16
+## v2.0.0 2025-10-16
 - Fixed: Error code now properly shows in responses.
 - Improved: Library fully supports TypeScript, ECMAScript Modules (ESM), and CommonJS (CJS).
 - Refactored: Error helper creation to reduce repetition and improve code quality.
