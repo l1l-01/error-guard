@@ -1,6 +1,6 @@
 {
   "name": "error-guard",
-  "version": "1.0.7",
+  "version": "2.0.0",
   "description": "Error Guard is a lightweight, TypeScript-friendly library for standardized error handling in Node.js/Express applications.",
   "license": "MIT",
   "author": "l1l khalil.aamar.dev@gmail.com",
