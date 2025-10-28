@@ -2,12 +2,9 @@
 
 **Error Guard** is a lightweight, TypeScript-friendly library for standardized error handling in Node.js/Express applications.
 
-# Changelog
-## v2.0.0 2025-10-16
-- Fixed: Error code now properly shows in responses.
-- Improved: Library fully supports TypeScript, ECMAScript Modules (ESM), and CommonJS (CJS).
-- Refactored: Error helper creation to reduce repetition and improve code quality.
-- Updated: TypeScript typings for better developer experience.
+## 🔄 Latest Update (v2.0.1 )
+ErrorGuard is now 10% faster!
+See full details in the [CHANGELOG.md](./CHANGELOG.md).
 
 ## Installation
 ```bash
@@ -17,7 +14,7 @@ npm install error-guard
 ## Environment Variables
 - Make sure you have a variable named `NODE_ENV` in your `.env` file.
 - When `process.env.NODE_ENV !== 'production'`, all error objects include a full stack trace to help with debugging.
-- In production, the stack field and name are automatically removed to prevent sensitive information from being exposed in API responses.
+- In production, the stack field is automatically removed to prevent sensitive information from being exposed in API responses.
 
 ## It provides:
 - Custom error classes with HTTP status codes and error codes
@@ -57,7 +54,6 @@ app.listen(3000, () => console.log("Server running on port 3000"));
   "code": "BAD_REQUEST",
   "message": "Invalid request data",
   "stack": "Error: ...",
-  "name": "ErrorGuard"
 }
 ```
 
